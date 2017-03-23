@@ -1,0 +1,47 @@
+body {
+  background-color: #4A4A4A;
+}
+
+.App {
+  width: 600px;
+  height: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #CBCBCB;
+  border-radius: 10px;
+}
+
+.app-title { /* Bloc it off */
+  border-bottom: 1px solid gray;
+  text-align: center;
+}
+
+.header-box { /* Current Task */
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.input .left {
+  width: 40%;
+  padding-bottom: 20px;
+  border-radius: 5px;
+}
+
+.input .right {
+  width: 40%;
+  padding-bottom: 20px;
+  border-radius: 5px;
+}
+
+.add {
+  width: 18.3%;
+  padding-bottom: 20px;
+  color: white;
+  background: black;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
