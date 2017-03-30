@@ -1,5 +1,4 @@
 import Firebase from 'firebase'
-import {fromJS} from "immutable";
 
 const config = {
     apiKey: "AIzaSyA1I-Wgu8blCHBSXE7Ripn3nnWdN4AZxBc",
@@ -21,9 +20,7 @@ const db = {
     return todoData.once("value", (snapshot) => {
       return snapshot;// Promise - asynchronous
     }).then((res) => {
-      // look fromJS
-      // console.log(fromJS(res.val()).toArray()[0].toObject())
-      return fromJS(res.val()).toArray();
+      return res.val();
     })
   }
 };

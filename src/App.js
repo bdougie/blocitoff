@@ -17,9 +17,10 @@ class App extends Component {
     })
   }
 
-// read about immutable toObject()
   render() {
-    console.log(this.state.todos)
+    const {todos} = this.state;
+    const keys = Object.keys(todos);
+
     return (
       <div className="App">
         <div className="app-title">
@@ -35,8 +36,8 @@ class App extends Component {
         </div>
         <div className="todos">
           <ul>
-          {this.state.todos.map((todo) => (
-            <li>{todo.toObject().title}</li>
+          {keys.map((key) => (
+            <li>{todos[key].title}</li>
           ))}
           </ul>
         </div>
